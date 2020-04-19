@@ -1,0 +1,32 @@
+{
+  "name": "create-wasm-app",
+  "version": "0.1.0",
+  "description": "create an app to consume rust-generated wasm packages",
+  "private": true,
+  "scripts": {
+    "start": "echo $PATH && webpack-dev-server -d --display-error-details",
+    "build": "webpack --mode development",
+    "altbuild": "wasm-pack build --dev --target",
+    "lint": "cargo clippy --all-targets --all-features"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erinpentecost/lifegasm.git"
+  },
+  "keywords": [
+    "webassembly",
+    "wasm",
+    "rust",
+    "webpack"
+  ],
+  "author": "Erin Pentecost <erin@pentecost.email>",
+  "license": "MIT",
+  "devDependencies": {
+    "@wasm-tool/wasm-pack-plugin": "^1.2.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
