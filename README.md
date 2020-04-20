@@ -2,6 +2,7 @@
 
 This is a learning experiment for Rust, Nodejs, and WebAssembly. It's based on this [excellent book](https://rustwasm.github.io/docs/book/). The game runs in a web worker that writes to an [OffscreenCanvas](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas). Because of that, it won't work on Firefox. Probably the most interesting code here is how I handle input buffering, since the game's frames per second are so terrible. This isn't production ready code by any means.
 
+**[Look at it here.](https://erinpentecost.github.io/rustylife/)**
 
 ## Folder Organization
 
