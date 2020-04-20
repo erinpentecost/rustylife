@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>lifegasm</title>
+  <style>
+    body {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    canvas {
+      image-rendering: pixelated;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: crisp-edges;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+  <canvas id='lifegasm-canvas' style="width: 80%;" width="320" height="240"></canvas>
+  <ul>
+    <li>Use arrows keys / WASD / UNEI to pan the camera.</li>
+    <li>Use space bar to pause the simulation.</li>
+    <li>Use right click to kill a cell.</li>
+    <li>Use left click to enliven a cell.</li>
+    <li>Use escape to clear everything.</li>
+  </ul>
+<script type="text/javascript" src="main.js"></script></body>
+
+</html>
